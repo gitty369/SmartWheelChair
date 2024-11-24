@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navigate Wheelchair</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Navigate Wheelchair</h1>
+  </header>
+  <main>
+    <section>
+        <h2>Select a destination:</h2>
+        <button id="kitchenBtn" onclick="navigateTo('kitchen')">Kitchen</button>
+        <button id="hallBtn" onclick="navigateTo('hall')">Hall</button>
+        <button id="bedroomBtn" onclick="navigateTo('bedroom')">Bedroom</button>
+        <button id="bathroomBtn" onclick="navigateTo('bathroom')">Bathroom</button>
+        <button id="balconyBtn" onclick="navigateTo('balcony')">Balcony</button>
+        <p id="status"></p>
+    </section>
+    
+    <section>
+        <h2>Basic Control</h2>
+        <p>Control the wheelchair manually:</p>
+        <button id="forwardBtn" onclick="controlWheelchair('forward')">Forward</button>
+        <button id="backwardBtn" onclick="controlWheelchair('backward')">Backward</button>
+        <button id="leftBtn" onclick="controlWheelchair('left')">Left</button>
+        <button id="rightBtn" onclick="controlWheelchair('right')">Right</button>
+        <p id="manualStatus"></p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
